@@ -17,11 +17,18 @@ namespace ConsoleApplicationSample
             Task<Character> characterAsync = client.getCharacter("area-52", "napalmuid");
             characterAsync.Wait();
             Character character = characterAsync.Result;
-            System.Console.WriteLine(character.toString());
+            String characterString = character.toString();
+
+
+            System.IO.StreamWriter file = new System.IO.StreamWriter("./printOut.txt");
+            file.WriteLine(character.toString());
+            file.Flush();
+            file.Close();
+
             System.Console.WriteLine("Press any button to continue...");
             System.Console.ReadKey();
         }
 
-  
+
     }
 }
