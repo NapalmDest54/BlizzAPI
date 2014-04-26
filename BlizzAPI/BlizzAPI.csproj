@@ -40,10 +40,13 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Region.cs" />
+    <Compile Include="WoW\character\Boss.cs" />
     <Compile Include="WoW\character\Character.cs" />
     <Compile Include="WoW\character\CharacterFields.cs" />
     <Compile Include="WoW\character\Glyphs.cs" />
     <Compile Include="WoW\character\Glyph.cs" />
+    <Compile Include="WoW\character\Progression.cs" />
+    <Compile Include="WoW\character\Raid.cs" />
     <Compile Include="WoW\character\Spec.cs" />
     <Compile Include="WoW\character\Stats.cs" />
     <Compile Include="WoW\character\CharacterTalents.cs" />

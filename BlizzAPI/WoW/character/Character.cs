@@ -54,6 +54,8 @@ namespace BlizzAPI.WoW.character
         [JsonProperty("talents")]
         public List<CharacterTalents> Talents { get; set; }
 
+        [JsonProperty("progression")]
+        public Progression Progressions { get; set; }
 
         public string toString()
         {
