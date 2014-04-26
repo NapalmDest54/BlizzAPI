@@ -42,8 +42,14 @@
     <Compile Include="Region.cs" />
     <Compile Include="WoW\character\Character.cs" />
     <Compile Include="WoW\character\CharacterFields.cs" />
+    <Compile Include="WoW\character\Glyphs.cs" />
+    <Compile Include="WoW\character\Glyph.cs" />
+    <Compile Include="WoW\character\Spec.cs" />
     <Compile Include="WoW\character\Stats.cs" />
+    <Compile Include="WoW\character\CharacterTalents.cs" />
     <Compile Include="WoW\character\Title.cs" />
+    <Compile Include="WoW\Spell.cs" />
+    <Compile Include="WoW\character\Talent.cs" />
     <Compile Include="WoW\WoWClient.cs" />
   </ItemGroup>
   <ItemGroup>

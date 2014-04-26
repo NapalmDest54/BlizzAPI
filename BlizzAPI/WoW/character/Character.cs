@@ -8,11 +8,11 @@ namespace BlizzAPI.WoW.character
 {
     public class Character
     {
-        [JsonProperty("lastModified")]
-        public long LastModified { get; set; }
-
         [JsonProperty("name")]
         public string Name { get; set; }
+
+        [JsonProperty("lastModified")]
+        public long LastModified { get; set; }
 
         [JsonProperty("realm")]
         public string Realm { get; set; }
@@ -49,6 +49,11 @@ namespace BlizzAPI.WoW.character
 
         [JsonProperty("titles")]
         public List<Title> Titles { get; set; }
+
+
+        [JsonProperty("talents")]
+        public List<CharacterTalents> Talents { get; set; }
+
 
         public string toString()
         {
