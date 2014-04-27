@@ -43,6 +43,7 @@
     <Compile Include="WoW\character\Boss.cs" />
     <Compile Include="WoW\character\Character.cs" />
     <Compile Include="WoW\character\CharacterFields.cs" />
+    <Compile Include="WoW\character\PvPInformation.cs" />
     <Compile Include="WoW\character\Glyphs.cs" />
     <Compile Include="WoW\character\Glyph.cs" />
     <Compile Include="WoW\character\Progression.cs" />
@@ -51,6 +52,8 @@
     <Compile Include="WoW\character\Stats.cs" />
     <Compile Include="WoW\character\CharacterTalents.cs" />
     <Compile Include="WoW\character\Title.cs" />
+    <Compile Include="WoW\pvp\Bracket.cs" />
+    <Compile Include="WoW\pvp\Brackets.cs" />
     <Compile Include="WoW\Spell.cs" />
     <Compile Include="WoW\character\Talent.cs" />
     <Compile Include="WoW\WoWClient.cs" />
@@ -79,6 +82,7 @@
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">

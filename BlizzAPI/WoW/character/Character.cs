@@ -57,6 +57,9 @@ namespace BlizzAPI.WoW.character
         [JsonProperty("progression")]
         public Progression Progressions { get; set; }
 
+        [JsonProperty("pvp")]
+        public PvPInformation PvPInformation { get; set; }
+
         public string toString()
         {
             return JsonConvert.SerializeObject(this, Formatting.Indented).ToString();
