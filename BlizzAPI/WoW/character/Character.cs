@@ -1,4 +1,6 @@
-﻿using BlizzAPI.WoW.character.pets;
+﻿using BlizzAPI.WoW.achievements;
+using BlizzAPI.WoW.character.pets;
+using BlizzAPI.WoW.feed;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -51,7 +53,6 @@ namespace BlizzAPI.WoW.character
         [JsonProperty("titles")]
         public List<Title> Titles { get; set; }
 
-
         [JsonProperty("talents")]
         public List<CharacterTalents> Talents { get; set; }
 
@@ -63,6 +64,12 @@ namespace BlizzAPI.WoW.character
 
         [JsonProperty("pets")]
         public Pets Pets { get; set; }
+
+        [JsonProperty("achievements")]
+        public Achievements Achievements { get; set; }
+
+        [JsonProperty("feed")]
+        public List<FeedItem> Feed { get; set; }
 
         public string toString()
         {

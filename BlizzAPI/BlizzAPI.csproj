@@ -40,6 +40,9 @@
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
     <Compile Include="Region.cs" />
+    <Compile Include="WoW\achievements\Achievement.cs" />
+    <Compile Include="WoW\achievements\AchievementCriteria.cs" />
+    <Compile Include="WoW\achievements\Achievements.cs" />
     <Compile Include="WoW\character\Boss.cs" />
     <Compile Include="WoW\character\Character.cs" />
     <Compile Include="WoW\character\CharacterFields.cs" />
@@ -56,6 +59,7 @@
     <Compile Include="WoW\character\Stats.cs" />
     <Compile Include="WoW\character\CharacterTalents.cs" />
     <Compile Include="WoW\character\Title.cs" />
+    <Compile Include="WoW\feed\FeedItem.cs" />
     <Compile Include="WoW\pvp\Bracket.cs" />
     <Compile Include="WoW\pvp\Brackets.cs" />
     <Compile Include="WoW\Spell.cs" />
@@ -88,6 +92,7 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="WoW\battlepets\" />
+    <Folder Include="WoW\character\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
