@@ -1,4 +1,5 @@
-﻿using Newtonsoft.Json;
+﻿using BlizzAPI.WoW.character.pets;
+using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
 using System.Linq;
@@ -59,6 +60,9 @@ namespace BlizzAPI.WoW.character
 
         [JsonProperty("pvp")]
         public PvPInformation PvPInformation { get; set; }
+
+        [JsonProperty("pets")]
+        public Pets Pets { get; set; }
 
         public string toString()
         {

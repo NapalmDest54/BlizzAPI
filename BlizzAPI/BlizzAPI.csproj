@@ -43,6 +43,10 @@
     <Compile Include="WoW\character\Boss.cs" />
     <Compile Include="WoW\character\Character.cs" />
     <Compile Include="WoW\character\CharacterFields.cs" />
+    <Compile Include="WoW\character\pets\Pet.cs" />
+    <Compile Include="WoW\character\pets\Pets.cs" />
+    <Compile Include="WoW\character\pets\PetSlots.cs" />
+    <Compile Include="WoW\character\pets\PetStats.cs" />
     <Compile Include="WoW\character\PvPInformation.cs" />
     <Compile Include="WoW\character\Glyphs.cs" />
     <Compile Include="WoW\character\Glyph.cs" />
@@ -82,7 +86,9 @@
     <None Include="ClassDiagram1.cd" />
     <None Include="packages.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Folder Include="WoW\battlepets\" />
+  </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />
   <Target Name="EnsureBclBuildImported" BeforeTargets="BeforeBuild" Condition="'$(BclBuildImported)' == ''">
