@@ -1,4 +1,5 @@
 ﻿using BlizzAPI.WoW.character;
+using BlizzAPI.WoW.Items;
 using Newtonsoft.Json;
 using System;
 using System.Collections.Generic;
@@ -76,6 +77,29 @@ namespace BlizzAPI.WoW
             }
             Character characterLoaded = JsonConvert.DeserializeObject<Character>(json);
             return characterLoaded;
+        }
+
+        public async Task<Item> getItem(int itemID)
+        {
+            StringBuilder sb = new StringBuilder();
+            sb.Append("http://");
+            sb.Append(baseApiUrl);
+            sb.Append("item/");
+            sb.Append(itemID.ToString());
+
+            String json = "";
+            try
+            {
+                json = await new HttpClient().GetStringAsync(sb.ToString());
+            }
+            catch (Exception e)
+            {
+                throw new Exception("Error Connecting With Battle.net with Address: " + sb.ToString());
+            }
+
+            Item itemLoaded = JsonConvert.DeserializeObject<Item>(json);
+            return itemLoaded;
+
         }
 
 

@@ -5,7 +5,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace BlizzAPI.WoW.character.items
+namespace BlizzAPI.WoW.Items
 {
     public class WeaponDamage
     {
