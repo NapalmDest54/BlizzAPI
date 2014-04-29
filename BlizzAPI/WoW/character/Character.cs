@@ -1,4 +1,5 @@
 ﻿using BlizzAPI.WoW.achievements;
+using BlizzAPI.WoW.character.items;
 using BlizzAPI.WoW.character.pets;
 using BlizzAPI.WoW.feed;
 using Newtonsoft.Json;
@@ -70,6 +71,9 @@ namespace BlizzAPI.WoW.character
 
         [JsonProperty("feed")]
         public List<FeedItem> Feed { get; set; }
+
+        [JsonProperty("items")]
+        public EquippedItems EquippedItems { get; set; }
 
         public string toString()
         {
