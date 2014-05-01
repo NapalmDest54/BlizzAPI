@@ -21,7 +21,7 @@ namespace BlizzAPI.WoW.character.items
         public string Icon { get; set; }
 
         [JsonProperty("quality")]
-        public int Quality { get; set; }
+        public ItemQuality Quality { get; set; }
 
         [JsonProperty("itemLevel")]
         public int ItemLevel { get; set; }

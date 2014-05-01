@@ -62,5 +62,11 @@ namespace BlizzAPI.WoW.character.items
 
         [JsonProperty("offHand")]
         public EquippedItem OffHand { get; set; }
+
+        [JsonProperty("shirt")]
+        public EquippedItem Shirt { get; set; }
+
+        [JsonProperty("tabard")]
+        public EquippedItem Tabard { get; set; }
     }
 }

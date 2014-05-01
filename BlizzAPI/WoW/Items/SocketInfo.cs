@@ -5,7 +5,7 @@ using System.Text;
 
 namespace BlizzAPI.WoW.Items
 {
-    class SocketInfo
+    public class SocketInfo
     {
     }
 }

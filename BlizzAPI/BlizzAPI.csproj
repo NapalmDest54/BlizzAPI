@@ -50,6 +50,7 @@
     <Compile Include="WoW\character\items\EquippedItemParameters.cs" />
     <Compile Include="WoW\character\items\EquippedItems.cs" />
     <Compile Include="WoW\character\items\EquippedItemUpgrade.cs" />
+    <Compile Include="WoW\Items\ItemQuality.cs" />
     <Compile Include="WoW\Items\ItemSource.cs" />
     <Compile Include="WoW\Items\ItemStat.cs" />
     <Compile Include="WoW\Items\SocketInfo.cs" />
@@ -103,7 +104,6 @@
   </ItemGroup>
   <ItemGroup>
     <Folder Include="WoW\battlepets\" />
-    <Folder Include="WoW\character\NewFolder1\" />
   </ItemGroup>
   <Import Project="$(MSBuildExtensionsPath32)\Microsoft\Portable\$(TargetFrameworkVersion)\Microsoft.Portable.CSharp.targets" />
   <Import Project="..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets" Condition="Exists('..\packages\Microsoft.Bcl.Build.1.0.14\tools\Microsoft.Bcl.Build.targets')" />

@@ -71,7 +71,7 @@ namespace BlizzAPI.WoW
             {
                 json = await new HttpClient().GetStringAsync(sb.ToString());
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 throw new Exception("Error Connecting With Battle.net with Address: " + sb.ToString());
             }
@@ -92,7 +92,7 @@ namespace BlizzAPI.WoW
             {
                 json = await new HttpClient().GetStringAsync(sb.ToString());
             }
-            catch (Exception e)
+            catch (Exception)
             {
                 throw new Exception("Error Connecting With Battle.net with Address: " + sb.ToString());
             }
