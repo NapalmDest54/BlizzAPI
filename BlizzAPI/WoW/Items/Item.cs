@@ -1,4 +1,5 @@
-﻿using System;
+﻿using Newtonsoft.Json;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -8,42 +9,118 @@ namespace BlizzAPI.WoW.Items
 {
     public class Item
     {
-        public int id { get; set; }
-        public int disenchantingSkillRank { get; set; }
-        public string description { get; set; }
-        public string name { get; set; }
-        public string icon { get; set; }
-        public int stackable { get; set; }
-        public int itemBind { get; set; }
-        public List<ItemStat> bonusStats { get; set; }
-        public List<object> itemSpells { get; set; }
-        public int buyPrice { get; set; }
-        public int itemClass { get; set; }
-        public int itemSubClass { get; set; }
-        public int containerSlots { get; set; }
-        public WeaponInfo weaponInfo { get; set; }
-        public int inventoryType { get; set; }
-        public bool equippable { get; set; }
-        public int itemLevel { get; set; }
-        public int maxCount { get; set; }
-        public int maxDurability { get; set; }
-        public int minFactionId { get; set; }
-        public int minReputation { get; set; }
-        public int quality { get; set; }
-        public int sellPrice { get; set; }
-        public int requiredSkill { get; set; }
-        public int requiredLevel { get; set; }
-        public int requiredSkillRank { get; set; }
-        public SocketInfo socketInfo { get; set; }
-        public ItemSource itemSource { get; set; }
-        public int baseArmor { get; set; }
-        public bool hasSockets { get; set; }
-        public bool isAuctionable { get; set; }
-        public int armor { get; set; }
-        public int displayInfoId { get; set; }
-        public string nameDescription { get; set; }
-        public string nameDescriptionColor { get; set; }
-        public bool upgradable { get; set; }
-        public bool heroicTooltip { get; set; }
+        [JsonProperty("id")]
+        public int Id { get; set; }
+
+        [JsonProperty("disenchantingSkillRank")]
+        public int DisenchantingSkillRank { get; set; }
+
+        [JsonProperty("description")]
+        public string Description { get; set; }
+
+        [JsonProperty("name")]
+        public string Name { get; set; }
+
+        [JsonProperty("icon")]
+        public string Icon { get; set; }
+
+        [JsonProperty("stackable")]
+        public int StackSize { get; set; }
+
+        [JsonProperty("itemBind")]
+        public ItemBinding ItemBind { get; set; }
+
+        [JsonProperty("bonusStats")]
+        public List<ItemStat> BonusStats { get; set; }
+
+        [JsonProperty("itemSpells")]
+        public List<object> ItemSpells { get; set; }
+
+        [JsonProperty("buyPrice")]
+        public int BuyPrice { get; set; }
+
+        [JsonProperty("itemClass")]
+        public int ItemClass { get; set; }
+
+        [JsonProperty("itemSubClass")]
+        public int ItemSubClass { get; set; }
+
+        [JsonProperty("containerSlots")]
+        public int ContainerSlots { get; set; }
+
+        [JsonProperty("weaponInfo")]
+        public WeaponInfo WeaponInfo { get; set; }
+
+        [JsonProperty("inventoryType")]
+        public int InventoryType { get; set; }
+
+        [JsonProperty("equippable")]
+        public bool Equippable { get; set; }
+
+        [JsonProperty("itemLevel")]
+        public int ItemLevel { get; set; }
+
+        [JsonProperty("maxCount")]
+        public int MaxCount { get; set; }
+
+        [JsonProperty("maxDurability")]
+        public int MaxDurability { get; set; }
+
+        [JsonProperty("minFactionId")]
+        public int MinFactionId { get; set; }
+
+        [JsonProperty("minReputation")]
+        public int MinReputation { get; set; }
+
+        [JsonProperty("quality")]
+        public ItemQuality Quality { get; set; }
+
+        [JsonProperty("sellPrice")]
+        public int SellPrice { get; set; }
+
+        [JsonProperty("requiredSkill")]
+        public Profession RequiredSkill { get; set; }
+
+        [JsonProperty("requiredLevel")]
+        public int RequiredLevel { get; set; }
+
+        [JsonProperty("requiredSkillRank")]
+        public int RequiredSkillRank { get; set; }
+
+        [JsonProperty("socketInfo")]
+        public SocketInfo SocketInfo { get; set; }
+
+        [JsonProperty("itemSource")]
+        public ItemSource ItemSource { get; set; }
+
+        [JsonProperty("baseArmor")]
+        public int BaseArmor { get; set; }
+
+        [JsonProperty("hasSockets")]
+        public bool HasSockets { get; set; }
+
+        [JsonProperty("isAuctionable")]
+        public bool IsAuctionable { get; set; }
+
+        [JsonProperty("armor")]
+        public int Armor { get; set; }
+
+        [JsonProperty("displayInfoId")]
+        public int DisplayInfoId { get; set; }
+
+        /// <summary>
+        /// Description of item (heroic, raid finder, etc).
+        /// </summary>
+        [JsonProperty("nameDescription")]
+        public string NameDescription { get; set; }
+
+        [JsonProperty("nameDescriptionColor")]
+        public string NameDescriptionColor { get; set; }
+
+        [JsonProperty("upgradable")]
+        public bool Upgradable { get; set; }
+
+        [JsonProperty("heroicTooltip")]
+        public bool HeroicTooltip { get; set; }
     }
 }
