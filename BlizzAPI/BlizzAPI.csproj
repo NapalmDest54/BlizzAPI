@@ -50,10 +50,13 @@
     <Compile Include="WoW\character\items\EquippedItemParameters.cs" />
     <Compile Include="WoW\character\items\EquippedItems.cs" />
     <Compile Include="WoW\character\items\EquippedItemUpgrade.cs" />
+    <Compile Include="WoW\Items\ItemBinding.cs" />
     <Compile Include="WoW\Items\ItemQuality.cs" />
     <Compile Include="WoW\Items\ItemSource.cs" />
     <Compile Include="WoW\Items\ItemStat.cs" />
+    <Compile Include="WoW\Items\Socket.cs" />
     <Compile Include="WoW\Items\SocketInfo.cs" />
+    <Compile Include="WoW\Items\SocketType.cs" />
     <Compile Include="WoW\Items\WeaponDamage.cs" />
     <Compile Include="WoW\Items\WeaponInfo.cs" />
     <Compile Include="WoW\character\pets\Pet.cs" />
@@ -72,6 +75,7 @@
     <Compile Include="WoW\feed\FeedItem.cs" />
     <Compile Include="WoW\Items\Item.cs" />
     <Compile Include="WoW\Items\ItemStats.cs" />
+    <Compile Include="WoW\Profession.cs" />
     <Compile Include="WoW\pvp\Bracket.cs" />
     <Compile Include="WoW\pvp\Brackets.cs" />
     <Compile Include="WoW\Spell.cs" />
